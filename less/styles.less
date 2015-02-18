@@ -1,0 +1,47 @@
+@import "bootstrap/bootstrap.less";
+@import "variables.less";
+/*@import "elements.less";*/
+body {
+    background: url(../img/body.png);
+    header {
+        background: @header-main-color url(../img/top.png) repeat-x;
+        height: 80px;
+        #logo {
+            position: absolute;
+            background: @header-main-color;
+            text-align: center;
+            margin: 15px 0 0 20px;
+            padding: 5px 30px 0 30px;
+            border-radius: 7px 7px 0 0;
+        }
+        .navbar-inverse {
+            top:41px;
+            font-size: 14px;
+            margin-left: 235px;
+            li.active {
+                font-weight: bold;
+            }
+        }
+        .navbar-toggle {
+            margin: 3px 13px 1px 0;
+        }
+        .navbar-collapse {
+            background: @header-main-color;
+        }
+    }
+    .container-main {
+        margin-left: 0px;
+        padding-top: 20px;
+        aside {
+            .list-group-item.active {
+                font-size: 14px;
+                font-weight: bold;
+            }
+        }
+        section {
+            background: #fff;
+            border-radius: 5px;
+            color: #3F3B3B;
+        }
+    }
+}
